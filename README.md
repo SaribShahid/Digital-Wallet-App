@@ -42,7 +42,7 @@ Digital Wallet is a modern Android application that enables secure and real-time
 ## ⚙️ Setup Instructions
 
 ```bash
-git clone https://github.com/your-username/digital-wallet-app.git
+https://github.com/SaribShahid/Digital-Wallet-App.git
 ```
 
 1. Open project in Android Studio
