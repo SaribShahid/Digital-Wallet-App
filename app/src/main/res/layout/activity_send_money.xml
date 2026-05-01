@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E64A19"
+    android:padding="20dp">
+
+    <!-- TOP BAR -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current balance"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvCurrentBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 0"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"/>
+
+    <!-- AMOUNT DISPLAY -->
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rs. 0"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- KEYPAD -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <TextView android:id="@+id/keypad1" style="@style/OrangeKeypad" android:text="1"/>
+        <TextView android:id="@+id/keypad2" style="@style/OrangeKeypad" android:text="2"/>
+        <TextView android:id="@+id/keypad3" style="@style/OrangeKeypad" android:text="3"/>
+
+        <TextView android:id="@+id/keypad4" style="@style/OrangeKeypad" android:text="4"/>
+        <TextView android:id="@+id/keypad5" style="@style/OrangeKeypad" android:text="5"/>
+        <TextView android:id="@+id/keypad6" style="@style/OrangeKeypad" android:text="6"/>
+
+        <TextView android:id="@+id/keypad7" style="@style/OrangeKeypad" android:text="7"/>
+        <TextView android:id="@+id/keypad8" style="@style/OrangeKeypad" android:text="8"/>
+        <TextView android:id="@+id/keypad9" style="@style/OrangeKeypad" android:text="9"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"/>
+
+        <TextView android:id="@+id/keypad0" style="@style/OrangeKeypad" android:text="0"/>
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/ic_backspace"
+            android:padding="20dp"
+            app:tint="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"/>
+    </GridLayout>
+
+    <!-- SEND BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:text="Send"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#e61919"
+        app:cornerRadius="28dp"/>
+</LinearLayout>

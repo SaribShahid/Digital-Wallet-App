@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- HEADER -->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Enter Account Number"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF6F00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAmount1"
+        android:layout_marginTop="8dp"
+        android:text="Sending"
+        android:textSize="14sp"
+        android:textColor="#FF6F00"/>
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 0"
+        android:textSize="14sp"
+        android:textColor="#FF6F00"
+        android:layout_marginBottom="20dp"/>
+
+
+    <!-- INPUT CARD -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:radius="12dp">
+
+        <EditText
+            android:id="@+id/etAccount"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Account / Phone / IBAN"
+            android:padding="16dp"
+            android:inputType="number"
+            android:textSize="16sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- NEXT BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:cornerRadius="14dp"
+        app:backgroundTint="#E65100"/>
+</LinearLayout>

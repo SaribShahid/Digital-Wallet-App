@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FF6F00"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the 6-digit code sent to your number"
+        android:textSize="15sp"
+        android:textColor="#666666"
+        android:layout_marginTop="8dp"/>
+
+    <!-- OTP Boxes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <EditText
+        android:id="@+id/otp1"
+            android:textColorHint="#36454F"
+        android:textColor="#000000"
+        style="@style/OtpBox"/>
+
+        <EditText
+            android:id="@+id/otp2"
+            android:textColorHint="#36454F"
+            android:textColor="#000000"
+            style="@style/OtpBox"/>
+
+        <EditText
+            android:id="@+id/otp3"
+            android:textColorHint="#36454F"
+            android:textColor="#000000"
+            style="@style/OtpBox"/>
+
+        <EditText
+            android:id="@+id/otp4"
+            android:textColorHint="#36454F"
+            android:textColor="#000000"
+            style="@style/OtpBox"/>
+
+        <EditText
+            android:id="@+id/otp5"
+            android:textColorHint="#36454F"
+            android:textColor="#000000"
+            style="@style/OtpBox"/>
+
+        <EditText
+            android:id="@+id/otp6"
+            android:textColorHint="#36454F"
+            android:textColor="#000000"
+            style="@style/OtpBox"/>
+
+    </LinearLayout>
+
+    <!-- Resend -->
+    <TextView
+        android:id="@+id/tvResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:textSize="14sp"
+        android:textColor="#FF6F00"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Verify Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Verify"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#FF6F00"
+        app:cornerRadius="14dp"/>
+
+</LinearLayout>

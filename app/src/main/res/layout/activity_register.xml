@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <!-- Logo / Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FF6F00"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your mobile number"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Phone Input Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_phone_input"
+        android:gravity="center_vertical">
+
+        <!-- Pakistan Flag -->
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="22dp"
+            android:src="@drawable/flag"/>
+
+        <!-- +92 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+92"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DDDDDD"
+            android:layout_marginHorizontal="8dp"/>
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textColorHint="#36454F"
+            android:hint="3XXXXXXXXX"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@null"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Register Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#FF6F00"
+        app:cornerRadius="14dp"/>
+
+</LinearLayout>
